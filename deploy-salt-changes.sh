@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -av --delete --exclude=$0 --exclude=.git /root/code/home-saltstack/. /srv/salt/.
+rsync -av --delete --delete-excluded --exclude=deploy-salt-changes.sh --exclude=.git --exclude=.gitignore /root/code/home-saltstack/. /srv/salt/.
